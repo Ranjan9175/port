@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* common styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    background-color: #D7D7D7;
+}
+
+/* nav bar */
+.navbar {
+    background-color: #5D688A;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+/* logo */
+.logo {
+    margin-left: 10px;
+}
+
+/* nav links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #9ba6b7;
+}
+
+/* main section */
+.profile {
+    border-radius: 100%;
+    border: 4px solid #5D688A;
+    transition: transform 0.4s ease-in-out;
+}
+
+.profile:hover {
+    transform: scale(1.1);
+}
+
+.main-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #1F2937;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #5D688A;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Headings */
+.heading {
+    margin: 20px;
+    color: #1F2937;
+    text-align: center;
+}
+
+.heading span {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+/* about and project section */
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 20px 35px;
+    margin-bottom: 50px;
+}
+
+.info {
+    background-color: #5D688A;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 900px;
+    color: #ffffff;
+}
+
+.skills {
+    list-style: none;
+}
+
+.project-info {
+    margin-left: 20px;
+}
+
+/* contact section */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* form section */
+.form-conatiner {
+    background-color: #5D688A;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+textarea,
+button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    resize: none;
+    font-family: inherit;
+}
+
+button {
+    background-color: #5D688A;
+    color: #f9fafb;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #334155;
+}
+
+/* wrapper for all pages */
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* responsive for small screens */
+@media only screen and (max-width:600px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .nav-links {
+        margin: 10px;
+        gap: 50px;
+    }
+}
